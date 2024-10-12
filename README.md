@@ -1,5 +1,5 @@
 
-# Otomatisasi API Tes Menggunakan TestNG
+# Otomatisasi Web Tes Menggunakan Cucumber
 Tugas ini bertujuan untuk membuat otomasi Web Testing menggunakan Web [AutomationExercise](https://www.automationexercise.com/). Berikut adalah langkah-langkah yang diambil untuk membangun dan mengotomatiskan Web.
 
 # Langkah-langkah Menjalankan Proyek
