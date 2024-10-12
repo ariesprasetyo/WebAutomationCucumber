@@ -4,7 +4,7 @@ Tugas ini bertujuan untuk membuat otomasi Web Testing menggunakan Web [Automatio
 
 # Langkah-langkah Menjalankan Proyek
 
-Berikut adalah panduan untuk menjalankan proyek API Automation Framework dari cloning repository hingga menjalankan pengujian menggunakan Gradle.
+Berikut adalah panduan untuk menjalankan proyek Web Automation Framework dari cloning repository hingga menjalankan pengujian menggunakan Gradle.
 
 ## Prasyarat
 Sebelum memulai, pastikan Anda telah menginstal beberapa alat berikut di sistem Anda:
@@ -12,9 +12,6 @@ Sebelum memulai, pastikan Anda telah menginstal beberapa alat berikut di sistem 
 2. **Java JDK**: minimum versi 8 atau lebih tinggi
 3. **Gradle**: untuk membangun dan menjalankan proyek
 4. **IDE atau Code Editor**: disarankan menggunakan IntelliJ IDEA atau VS Code
-
-
-
 
 
 ## Langkah 1: Clone Repository
