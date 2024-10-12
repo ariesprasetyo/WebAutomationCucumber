@@ -52,11 +52,11 @@ Jalankan semua tes yang ada di proyek ini dengan menggunakan perintah berikut:
 
 ## Screenshot
 **Running Outpot**
-![Terminal Outpot](CLI SS.png)
+![Terminal Outpot](CLI.png)
 ####
 **Report**
-![Report](Report SS.png)
-![Report](Report Detail SS.png)
+![Report](Report.png)
+![Report](ReportDetail.png)
 ####
 
 
