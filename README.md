@@ -1,6 +1,6 @@
 
 # Otomatisasi API Tes Menggunakan TestNG
-Tugas ini bertujuan untuk membuat otomasi API menggunakan API dari [AutomationExercise](https://www.automationexercise.com/). Berikut adalah langkah-langkah yang diambil untuk membangun dan mengotomatiskan pengujian API.
+Tugas ini bertujuan untuk membuat otomasi Web Testing menggunakan Web [AutomationExercise](https://www.automationexercise.com/). Berikut adalah langkah-langkah yang diambil untuk membangun dan mengotomatiskan Web.
 
 # Langkah-langkah Menjalankan Proyek
 
