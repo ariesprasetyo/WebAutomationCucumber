@@ -5,6 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
+import pageObject.loginPage;
 import pageObject.mainPage;
 
 public class shopSteps {
@@ -58,8 +59,11 @@ public class shopSteps {
     @And("Total price = price multiplied by quantity")
     public void total_price() {
         mainPage page = new mainPage(driver);
+        loginPage loginPage = new loginPage(driver);
         int actualTotalPrice = page.getPrice() * page.getQuantity();
         Assert.assertEquals(page.totalPrice(),actualTotalPrice);
+        loginPage.clickDeleteAccountButton();
+        loginPage.clickContinueButton();
     }
 
 
