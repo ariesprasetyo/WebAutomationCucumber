@@ -17,9 +17,20 @@ public class shopSteps {
     @When("the user clicks MEN category and choses Tshirts")
     public void theUserClicksMENCategoryAndChosesTshirts() {
         mainPage page = new mainPage(driver);
+        webDriverWait(5);
         page.clickMenCategory();
+        webDriverWait(10);
         page.clickTshirtsCategory();
     }
+
+    private void webDriverWait(int i) {
+        try {
+            Thread.sleep(i * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
     @Then("the user is redirected to the product page")
     public void theUserIsRedirectedToTheProductPage() {
         mainPage page = new mainPage(driver);
