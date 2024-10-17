@@ -1,0 +1,47 @@
+name: API Automation Test
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  workflow_dispatch:  
+
+jobs:
+  selenium-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Set up JDK
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name : setup chrome
+      uses: browser-actions/setup-chrome@v1.7.2 
+
+    - name: Setup Gradlew
+      run: chmod +x gradlew
+    
+    - name: Execute Tests
+      run: ./gradlew test
+
+    - name: Archive Test Results
+      uses: actions/upload-artifact@v4.4.3
+      with:
+        name: Test Reports
+        path: ./build/cucumber-reports
+
+    - name : Deploy report to Github Pages
+      if : alalways()
+      uses: peaceiris/actions-github-pages@v3.1.12
+      with :
+          personal_token: ${{ secrets.GITHUB_TOKEN}}
+          publish_dir : ./build/cucumber-reports
+
+   
