@@ -1,4 +1,4 @@
-name: API Automation Test
+name: Web Automation Test
 
 on:
   push:
