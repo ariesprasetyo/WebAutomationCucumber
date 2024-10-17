@@ -8,7 +8,7 @@ on:
   workflow_dispatch:  
 
 jobs:
-  selenium-test:
+  cucumber-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -37,11 +37,11 @@ jobs:
         name: Test Reports
         path: ./build/cucumber-report
 
-    - name : Deploy report to Github Pages
-      if : always()
-      uses: peaceiris/actions-github-pages@v3.1.12
-      with :
-          personal_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Publish test report
+      uses: peaceiris/actions-gh-pages@v3
+      if: always()
+      with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir : ./build/cucumber-report
 
