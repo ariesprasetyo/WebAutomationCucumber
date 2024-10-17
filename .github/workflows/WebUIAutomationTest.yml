@@ -42,6 +42,7 @@ jobs:
       uses: peaceiris/actions-github-pages@v3.1.12
       with :
           personal_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
           publish_dir : ./build/cucumber-report
 
    
